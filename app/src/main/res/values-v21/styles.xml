@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="transition_style" parent="Base.Theme.AppCompat.Light">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+    </style>
+</resources>

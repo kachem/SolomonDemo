@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MarqueeTextView">
+        <attr name="mTextStr" format="string"/>
+        <attr name="mTextColor" format="color"/>
+        <attr name="mTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
+</resources>

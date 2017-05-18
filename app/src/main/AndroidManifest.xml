@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.gallery.camera.privacy.solomon"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 使用指纹的权限 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <application
+        android:name="com.gallery.camera.framework.SolomonApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.cjs">
+        <activity
+            android:name="com.gallery.camera.main.ui.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gallery.camera.camera.ui.CameraActivity"
+            android:icon="@mipmap/shotcut"
+            android:label="@string/desk_shot"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gallery.camera.main.ui.PasswordActivity"
+            android:screenOrientation="portrait"/>
+        <!-- ExpandableList演示界面 -->
+        <activity
+            android:name="com.gallery.camera.ExpandableList.SetCityActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gallery.camera.framework.custom.TestActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gallery.camera.lollipop.LollipopActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/transition_style"/>
+
+        <activity
+            android:name="com.gallery.camera.lollipop.SceneActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gallery.camera.lollipop.TransitionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/transition_style"/>
+    </application>
+
+</manifest>

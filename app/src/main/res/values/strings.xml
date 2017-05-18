@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Solomon</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <!--设置-->
+    <string name="action_shotcut">Create Shotcut</string>
+    <string name="set_city">Set City</string>
+
+    <!--快捷方式及camera相关-->
+    <string name="desk_shot">Quick Capture</string>
+    <string name="permission_tip">This Application needs camera permission.</string>
+
+
+    <string name="transition_desc">Contains resource classes used by applications included in the platform and defines application permissions for system features.
+
+You can use some resources directly from these R classes in your own applications, but you should generally use only resources that you\'ve provided directly in your application, in order to provide a cohesive application package that has no external dependencies. In particular, you should not use drawable resources from the android package, because they may change between platform versions, causing unforeseen conflicts with your design. Typically, styles are the only resources you should use directly from these resources.</string>
+</resources>

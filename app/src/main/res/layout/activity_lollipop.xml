@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_scene"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/img_scene"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_red"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Scene Transition"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_slide"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/img_slide"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_green"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Slide Transition"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_explode"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/img_explode"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_pink"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Explode Transition"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_fade"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/img_fade"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_orange"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Fade Transition"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_shared_element"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/img_shared_element"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_yellow"
+            android:transitionName="share_img"/>
+
+        <TextView
+            android:id="@+id/tv_share_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Shared Elements"
+            android:transitionName="share_text"/>
+    </LinearLayout>
+</LinearLayout>

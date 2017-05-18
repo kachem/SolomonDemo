@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdasdfa"/>
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dsfasdf"/>
+
+    <com.gallery.camera.framework.custom.MarqueeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ssdfjgjssdfss"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:transitionName="zidingyi"/>
+
+</LinearLayout>
