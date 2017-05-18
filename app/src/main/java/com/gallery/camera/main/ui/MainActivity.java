@@ -3,13 +3,8 @@ package com.gallery.camera.main.ui;
 import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.os.Bundle;
-import android.os.IBinder;
-import android.os.RemoteException;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -23,7 +18,6 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-import android.widget.Toast;
 
 import com.gallery.camera.camera.ui.CameraActivity;
 import com.gallery.camera.framework.baseui.BaseActivity;
@@ -31,7 +25,6 @@ import com.gallery.camera.framework.custom.TestActivity;
 import com.gallery.camera.framework.utils.DeviceUtils;
 import com.gallery.camera.lollipop.LollipopActivity;
 import com.gallery.camera.privacy.solomon.R;
-import com.iobit.mobilecare.IConfigAIDL;
 
 import java.util.ArrayList;
 
@@ -43,7 +36,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     private FloatingActionButton fab1, fab2; //仅用于动画展示
     private boolean isOpen = false; //浮动按钮菜单是否打开
 
-    private IConfigAIDL aidl;
+   /* private IConfigAIDL aidl;
 
     private ServiceConnection connection = new ServiceConnection() {
 
@@ -64,7 +57,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         public void onServiceDisconnected(ComponentName name) {
 
         }
-    };
+    };*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,20 +67,20 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     @Override
     protected void onResume() {
         super.onResume();
-        getData();
+        //getData();
     }
 
     @Override
     protected void onDestroy() {
-        unbindService(connection);
+        //unbindService(connection);
         super.onDestroy();
     }
 
-    private void getData() {
+    /*private void getData() {
         Intent intent = new Intent("com.iobit.mobilecare.chargingscreen.config");
         intent.setPackage("com.iobit.mobilecare");
         bindService(intent, connection, Context.BIND_AUTO_CREATE);
-    }
+    }*/
 
     @Override
     protected int getLayoutRes() {
